@@ -1,0 +1,124 @@
+/* Basic Profile Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 100%;
+    flex-wrap: wrap;
+    opacity: 0.5;
+}
+
+.profile:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    margin-right: 12px;
+    flex: 0 0 auto;
+}
+
+.logo i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.name h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    flex: 1 1 auto;
+}
+
+.profile:hover .name h2 {
+    color: #007bff;
+}
+
+.setting {
+    margin-left:auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    flex: 0 0 auto;
+}
+
+.setting i {
+    font-size: 30px;
+    color: #333;
+}
+
+.setting:hover {
+    transform: rotate(90deg);
+}
+
+/* Settings Menu Styles */
+#settingsMenu {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile {
+        padding: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .name h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .setting {
+        margin-left: 0;
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        padding: 10px;
+    }
+
+    .logo i {
+        font-size: 30px;
+    }
+
+    .name h2 {
+        font-size: 18px;
+    }
+
+    .setting i {
+        font-size: 25px;
+    }
+}
