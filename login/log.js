@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (localStorage.getItem(username) === password) {
 
-            window.location.href = 'dashboard.html';
+            window.location.href = '/index2.html';
         } else {
             document.querySelector('#login-form .message').textContent = 'Invalid username or password';
         }
